@@ -7,129 +7,18 @@
     <title>Welcome to Projects Page</title>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        header {
-            position: sticky;
-            top: 0;
-            left: 0;
-        }
-
-        .navbar {
-            display: flex;
-            background-color: #322f2f;
-        }
-
-        .left {
-            width: 15%;
-        }
-
-        .left .box {
-            width: 30px;
-            height: 30px;
-            background-color: crimson;
-            border-radius: 15px;
-            margin: 5px 25px;
-        }
-
-        .center {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 55%;
-        }
-
-        .center a {
-            position: relative;
-            font-size: 1.2em;
-            color: #fff;
-            text-decoration: none;
-            font-weight: 500;
-            margin-left: 40px;
-        }
-
-        .center a::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -3px;
-            width: 100%;
-            height: 3px;
-            background: #fff;
-            border-radius: 5px;
-            transform: scaleX(0);
-            transform-origin: center;
-            transition: transform .5s;
-        }
-
-        .center a:hover::after {
-            transform-origin: center;
-            transform: scaleX(1);
-        }
-
-        .right {
-            display: flex;
-            width: 30%;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .right input {
-            font-size: 1rem;
-            padding: 3px 40px;
-            margin: 0px 5px;
-            border-radius: 15px;
-            outline: none;
-            border: 2px solid black;
-        }
-
-
-        .right button {
-            font-size: 13px;
-            border-radius: 15px;
-            padding: 0px 3px;
-            cursor: pointer;
-            border: 2px solid black;
-            outline: none;
-        }
-
-        .right button:hover {
-            background-color: #c8c8c8;
-        }
-
-        /* footer of the page */
-        footer {
-            background-color: #322f2f;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: static;
-            bottom: 0px;
-        }
-
-        footer h5 {
-            font-size: 1rem;
-            padding-top: 7px;
-        }
-
-        footer h6 {
-            font-size: 0.8rem;
-            padding: 8px 0px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="response.css">
+    <link rel="shortcut icon"
+        href="https://d1b1fjiwh8olf2.cloudfront.net/icon/premium/png-256/3020706.png?token=eyJhbGciOiJoczI1NiIsImtpZCI6ImRlZmF1bHQifQ__.eyJpc3MiOiJkMWIxZmppd2g4b2xmMi5jbG91ZGZyb250Lm5ldCIsImV4cCI6MTY4OTEyMDAwMCwicSI6bnVsbCwiaWF0IjoxNjg4ODc4NjIzfQ__.15021c4f70cc68abd378c04235ba74dfdf2a531d096c25ec980b23cdf3373423"
+        type="image/x-icon">
     <style>
         .projects-container {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 86.6vh;
-            background: url('https://cdn.wallpapersafari.com/55/73/ghY4rc.jpg') no-repeat;
+            background: url('https://e1.pxfuel.com/desktop-wallpaper/424/7/desktop-wallpaper-html-body-backgrounds-full-screen-html5-background.jpg') no-repeat;
             background-size: 100% 100%;
         }
 
@@ -142,26 +31,29 @@
             /* border: 1px solid red; */
         }
 
-        .items {
+        .items a {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             cursor: pointer;
-            box-shadow: 0px 0px 8px 1px #634c8f;
+            box-shadow: 0px 0px 8px 2px #384c9f87;
             border-radius: 25px;
-            backdrop-filter: blur(3px);
+            backdrop-filter: blur(1px);
             transition: .5s;
-        }
-        
-        .items:hover {
-            background-color: #8275a669;
-            backdrop-filter: blur(6px);
-            box-shadow: 0px 0px 8px 3px #634c8f;
+            text-decoration: none;
+            width: 100%;
+            height: 100%;
         }
 
-        .items:hover .text{
-            font-size: 2.4rem;
+        .items a:hover {
+            background-color: #80b6c92e;
+            backdrop-filter: blur(3px);
+            box-shadow: 0px 0px 8px 4px #2b409a87;
+        }
+
+        .items a:hover .text {
+            font-size: 2.2rem;
         }
 
         .img img {
@@ -170,7 +62,8 @@
 
         .text {
             font-size: 2rem;
-            color: yellow;
+            color: black;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -198,31 +91,40 @@
     <div class="projects-container">
         <div class="projects">
             <div class="items">
-                <span class="img">
-                    <img src="https://www.ntuclearninghub.com/documents/39367/4216797/Python-Symbol.png/369e410e-a90f-f887-c2dc-61f7ef761476/"
-                        alt="Image not Found">
-                </span>
-                <span class="text">Python Programs</span>
+                <a href="#">
+                    <span class="img">
+                        <img src="https://www.ntuclearninghub.com/documents/39367/4216797/Python-Symbol.png/369e410e-a90f-f887-c2dc-61f7ef761476/"
+                            alt="Image not Found">
+                    </span>
+                    <span class="text">Python Programs</span>
+                </a>
             </div>
             <div class="items">
-                <span class="img">
-                    <img src="https://logos-world.net/wp-content/uploads/2022/07/Java-Logo.png" alt="Image not Found">
-                </span>
-                <span class="text">Java Programs</span>
+                <a href="#">
+                    <span class="img">
+                        <img src="https://logos-world.net/wp-content/uploads/2022/07/Java-Logo.png"
+                            alt="Image not Found">
+                    </span>
+                    <span class="text">Java Programs</span>
+                </a>
             </div>
             <div class="items">
-                <span class="img">
-                    <img src="https://freepngimg.com/save/19588-web-development-png-picture/600x400"
-                        alt="Image not Found">
-                </span>
-                <span class="text">Web Development</span>
+                <a href="#">
+                    <span class="img">
+                        <img src="https://freepngimg.com/save/19588-web-development-png-picture/600x400"
+                            alt="Image not Found">
+                    </span>
+                    <span class="text">Web Development</span>
+                </a>
             </div>
             <div class="items">
-                <span class="img">
-                    <img src="https://play-lh.googleusercontent.com/pd_r7IFHbpkqyn-rEmS2CEd4fWio2hjDE_5cuGE5wkGuQXyYgATIKgKGr5SkMqQeRTAo=w600-h300-pc0xffffff-pd"
-                        alt="Image not Found">
-                </span>
-                <span class="text">C Programs</span>
+                <a href="#">
+                    <span class="img">
+                        <img src="https://play-lh.googleusercontent.com/pd_r7IFHbpkqyn-rEmS2CEd4fWio2hjDE_5cuGE5wkGuQXyYgATIKgKGr5SkMqQeRTAo=w600-h300-pc0xffffff-pd"
+                            alt="Image not Found">
+                    </span>
+                    <span class="text">C Programs</span>
+                </a>
             </div>
         </div>
     </div>
