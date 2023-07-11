@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,13 +12,166 @@
     <link rel="shortcut icon" href="https://icon-library.com/images/resume-icon/resume-icon-16.jpg" type="image/x-icon">
     <style>
         .about-container {
-            height: 150vh;
-            background-color: purple;
+            height: 110vh;
+            /* background-color: black; */
+            background: url('https://img.freepik.com/free-psd/aerial-view-wooden-table-photography-hobby-concept_53876-12011.jpg') no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            color: greenyellow;
+            text-shadow: 0px 3px 3px black;
+        }
+
+        .about-container>h2 {
+            margin: 10px 0px;
+            font-size: 2.1rem;
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+            text-underline-position: from-font;
+        }
+
+        .details {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            /* background-color: red; */
+            height: 25%;
+        }
+
+        .details h2 {
+            font-size: 1.7rem;
+            text-decoration: underline dotted;
+        }
+
+        .details ul li {
+            list-style-type: square;
+            font-family: sans-serif;
+            font-size: 1.3rem;
+            padding: 7px 0px;
+        }
+
+        .qualification {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            /* background-color: darkblue; */
+            width: 95%;
+            height: 55vh;
+        }
+
+
+        .qualification h2 {
+            font-size: 2.1rem;
+            text-decoration-line: underline;
+            text-decoration-style: dotted;
+            text-underline-position: under;
+        }
+
+        .rows-cols {
+            width: 93%;
+            height: 66%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr) 1.5fr 1.2fr;
+            grid-template-rows: repeat(3, 1fr);
+            box-shadow: 6px 5px 12px 1px rgb(63, 36, 16);
+        }
+
+        .rows-cols .rows {
+            border: 1.6px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .rows-cols .headings {
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration-line: underline;
+            text-underline-position: from-font;
+        }
+
+        .rows-cols .values {
+            font-size: 1.7rem;
+            font-weight: 600;
+            font-family: cursive;
+        }
+
+        .expertise {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 90%;
+            height: 60vh;
+            margin-bottom: 20px;
+            /* background-color: red; */
+
+        }
+
+        .expertise h2 {
+            font-size: 2.3rem;
+            text-decoration: underline;
+            text-underline-position: from-font;
+        }
+
+        .expert-grid {
+            /* background-color: cadetblue; */
+            width: 90%;
+            height: 75%;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 40px;
+        }
+
+        .box-display {
+            /* border: 2px solid greenyellow; */
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            cursor: grab;
+            backdrop-filter: blur(3px);
+            box-shadow: 4px 8px 10px 2px #402817;
+        }
+        
+        .box-display:hover{
+            backdrop-filter: blur(6px);
+            box-shadow: 0 0 10px 4px #402817;
+        }
+
+        .box-display:hover ul li {
+            list-style-type: disclosure-closed;
+            font-size: 1.7rem;
+        }
+
+        .box-display:hover h3 {
+            font-size: 1.9rem;
+        }
+        
+        .box-display h3 {
+            font-size: 1.8rem;
+            text-decoration: underline;
+        }
+
+        .box-display ul {
+            font-size: 1.5rem;
+        }
+
+        .box-display ul li {
+            list-style-type: square;
+            padding: 5px;
         }
     </style>
 </head>
 
 <body>
+    <!-- default for every page -->
     <header>
         <nav class="navbar">
             <div class="left">
@@ -37,8 +191,73 @@
             </div>
         </nav>
     </header>
+    <!-- this part is different in every page -->
     <div class="about-container">
-        this is about container
+        <h2>About Me</h2>
+        <div class="details">
+            <h2>My Objectives</h2>
+            <ul>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, beatae. Similique corrupti
+                    reprehenderit beatae quis tempora ex, ad quos blanditiis!</li>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam sequi ut maiores? Saepe, mollitia
+                    vero.</li>
+            </ul>
+        </div>
+        <div class="qualification">
+            <h2>My Qualification Details</h2>
+            <div class="rows-cols">
+                <div class="rows headings">Examination</div>
+                <div class="rows headings">Year</div>
+                <div class="rows headings">Board/University</div>
+                <div class="rows headings">School/College</div>
+                <div class="rows headings">CGPA/Aggregate %</div>
+                <div class="rows values">BCA</div>
+                <div class="rows values">2024</div>
+                <div class="rows values">Makaut</div>
+                <div class="rows values">Techno India Hooghly</div>
+                <div class="rows values">9.4 CGPA</div>
+                <div class="rows values">Hs</div>
+                <div class="rows values">2021</div>
+                <div class="rows values">WBCHSE</div>
+                <div class="rows values">S. S. N. V.</div>
+                <div class="rows values">78 %</div>
+                <div class="rows values">Class X</div>
+                <div class="rows values">2019</div>
+                <div class="rows values">WBBSE</div>
+                <div class="rows values">S. S. N. V.</div>
+                <div class="rows values">66 %</div>
+            </div>
+        </div>
+        <div class="expertise">
+            <h2>My Expertise</h2>
+            <div class="expert-grid">
+                <div class="box-display">
+                    <h3>Computer Proficiency</h3>
+                    <ul>
+                        <li>M. S. Word</li>
+                        <li>M. S. Powerpoint</li>
+                        <li>M. S. Excel</li>
+                    </ul>
+                </div>
+                <div class="box-display">
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li>Cricket</li>
+                        <li>Badminton</li>
+                        <li>Programming</li>
+                        <li>Frontend Development</li>
+                    </ul>
+                </div>
+                <div class="box-display">
+                    <h3>Languages </h3>
+                    <ul>
+                        <li>English</li>
+                        <li>Hindi</li>
+                        <li>Bengali</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- default for every page -->
     <footer>
