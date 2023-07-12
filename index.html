@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,12 +19,12 @@
             background-size: 100% 100%;
         }
 
-        .left-content{
+        .left-content {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 54%;
+            width: 60%;
             height: 100%;
             color: #fff447;
             text-shadow: #00f3ff;
@@ -39,25 +40,25 @@
             font-size: 3rem;
         }
 
-        .left-content #element{
+        .left-content #element {
             font-weight: bold;
             color: #00f3ff;
         }
-        
-        .right-content{
+
+        .right-content {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 46%;
+            width: 40%;
             height: 100%;
         }
 
-        .dev-img{
-            width: 70%;
+        .dev-img {
+            width: 80%;
             border: 8px double white;
             border-radius: 50px;
+            margin-right: 20%;
         }
-
     </style>
 </head>
 
@@ -87,7 +88,8 @@
             <p class="disc">I'm Interested in <span id="element"></span></p>
         </div>
         <div class="right-content">
-            <img src="https://st2.depositphotos.com/1003697/8476/i/950/depositphotos_84761634-stock-photo-startup-business-software-developer-working.jpg" alt="image not found!" class="dev-img">
+            <img src="https://st2.depositphotos.com/1003697/8476/i/950/depositphotos_84761634-stock-photo-startup-business-software-developer-working.jpg"
+                alt="image not found!" class="dev-img">
         </div>
     </div>
     <!-- default for every page -->
@@ -103,8 +105,8 @@
     <!-- Setup and start animation! -->
     <script>
         var typed = new Typed('#element', {
-        strings: ['Web Development.', 'Python Automation.'],
-        typeSpeed: 60,
+            strings: ['Web Development.', 'Python Automation.'],
+            typeSpeed: 60,
         });
     </script>
 </body>
