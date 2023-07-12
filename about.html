@@ -14,18 +14,20 @@
         .about-container {
             height: 110vh;
             /* background-color: black; */
-            background: url('https://img.freepik.com/free-psd/aerial-view-wooden-table-photography-hobby-concept_53876-12011.jpg') no-repeat;
-            background-size: cover;
+            background: url('https://media.istockphoto.com/id/1216667300/photo/dark-color-office-poster-background-with-empty-wall-sofa-chair-plant-carpet-and-curtain-in.jpg?s=170667a&w=0&k=20&c=CJfZkL1xpCWnPefYuk7hFuxIeIjzWfOS79nlvIF9i8A=') no-repeat;
+            background-size: 100% 100%;
+            /* background-size: cover; */
             background-attachment: fixed;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
-            color: greenyellow;
-            text-shadow: 0px 3px 3px black;
+            /* color: greenyellow;
+            text-shadow: 0px 3px 3px black; */
         }
 
         .about-container>h2 {
+            color: cyan;
             margin: 10px 0px;
             font-size: 2.1rem;
             text-decoration-line: underline;
@@ -34,6 +36,7 @@
         }
 
         .details {
+            color: darkorange;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
@@ -47,8 +50,7 @@
             text-decoration: underline dotted;
         }
 
-        .details ul li {
-            list-style-type: square;
+        .details ol li {
             font-family: sans-serif;
             font-size: 1.3rem;
             padding: 7px 0px;
@@ -70,6 +72,7 @@
             text-decoration-line: underline;
             text-decoration-style: dotted;
             text-underline-position: under;
+            color: turquoise;
         }
 
         .rows-cols {
@@ -78,27 +81,30 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr) 1.5fr 1.2fr;
             grid-template-rows: repeat(3, 1fr);
-            box-shadow: 6px 5px 12px 1px rgb(63, 36, 16);
+            box-shadow: 6px 5px 12px 1px rgb(16 16 16);
+            backdrop-filter: blur(7px);
         }
 
         .rows-cols .rows {
-            border: 1.6px solid black;
+            border: 1.6px solid #646470;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-
+        
         .rows-cols .headings {
             font-size: 1.8rem;
             font-weight: bold;
             text-decoration-line: underline;
             text-underline-position: from-font;
+            color: springgreen;
         }
-
+        
         .rows-cols .values {
             font-size: 1.7rem;
             font-weight: 600;
             font-family: cursive;
+            color: greenyellow;
         }
 
         .expertise {
@@ -117,6 +123,7 @@
             font-size: 2.3rem;
             text-decoration: underline;
             text-underline-position: from-font;
+            color: gold;
         }
 
         .expert-grid {
@@ -126,23 +133,24 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 40px;
+            color: white;
         }
 
         .box-display {
-            /* border: 2px solid greenyellow; */
+            border: 2px solid white;
             border-radius: 30px;
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
             align-items: center;
             cursor: grab;
-            backdrop-filter: blur(3px);
-            box-shadow: 4px 8px 10px 2px #402817;
+            backdrop-filter: blur(6px);
+            box-shadow: 4px 8px 10px 2px #2b2b2b;
         }
         
         .box-display:hover{
-            backdrop-filter: blur(6px);
-            box-shadow: 0 0 10px 4px #402817;
+            backdrop-filter: blur(9px);
+            box-shadow: 0 0 10px 4px #2a2a2a;
         }
 
         .box-display:hover ul li {
@@ -196,12 +204,10 @@
         <h2>About Me</h2>
         <div class="details">
             <h2>My Objectives</h2>
-            <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, beatae. Similique corrupti
-                    reprehenderit beatae quis tempora ex, ad quos blanditiis!</li>
-                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam sequi ut maiores? Saepe, mollitia
-                    vero.</li>
-            </ul>
+            <ol>
+                <li>My main objective is to become the best of myself, be more efficient and fit to any position at any company.</li>
+                <li>I work everyday to enhance my skills, gain more knoledge and become more productive.</li>
+            </ol>
         </div>
         <div class="qualification">
             <h2>My Qualification Details</h2>
@@ -264,7 +270,7 @@
         <h5>Copyright © 2023 - All Rights Reserved</h5>
         <h6>Designed and Owned by - <b>Swagata Mukherjee</b></h6>
     </footer>
-    <script src="script.js"></script>
+    <script sscript.js"></script>
 </body>
 
 </html>
