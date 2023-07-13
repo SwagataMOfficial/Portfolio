@@ -58,15 +58,19 @@
     
     .left-content {
         width: 100% !important;
-        height: 46% !important;
+        height: 44% !important;
     }
 
     .left-content .name {
-        font-size: 2.5rem !important;
+        font-size: 2.2rem !important;
+    }
+
+    .disc #element{
+        display: inline-block;
     }
 
     .left-content .disc {
-        font-size: 2.8rem !important;
+        font-size: 2.1rem !important;
         text-align: center;
     }
 }
