@@ -97,6 +97,7 @@
 
     .rows-cols .headings {
         font-size: 1.2rem;
+        padding: 0 10px;
     }
 
     .rows-cols .values {
