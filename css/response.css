@@ -84,12 +84,12 @@
         overflow: scroll;
     }
 
-    .items{
+    .items {
         display: flex;
         justify-content: center;
     }
 
-    #last-item{
+    #last-item {
         margin-bottom: 15px;
     }
 
@@ -120,13 +120,39 @@
 
     /* contact page responsiveness */
 
-    .wrapper{
+    .wrapper {
         width: 85%;
         height: 90%;
     }
 
-    #btn-submit{
+    #btn-submit {
         width: 100%;
+    }
+
+    /* contact result responsiveness */
+
+    .contact-res-container {
+        height: 76.7vh;
+    }
+
+    .contents {
+        width: 95%;
+        height: 65%;
+    }
+
+    .data-table {
+        width: 97%;
+        height: 70%;
+    }
+
+    .datas {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .result{
+        padding: 2px;
+        overflow: scroll;
     }
 
 }
