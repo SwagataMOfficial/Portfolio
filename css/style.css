@@ -7,6 +7,7 @@ header{
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 2;
 }
 
 .navbar {
@@ -118,8 +119,9 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: static;
-    bottom: 0px;
+    /* position: fixed; */
+    /* bottom: 0px; */
+    /* width: 100%; */
 }
 
 footer h5 {
@@ -130,4 +132,491 @@ footer h5 {
 footer h6 {
     font-size: 0.8rem;
     padding: 8px 0px;
+}
+
+/* home/index page styling */
+
+.home-container {
+    display: flex;
+    height: 86.6vh;
+    /* background-color: #270441; */
+    background: url('https://img.pikbest.com/backgrounds/20200530/black-and-gold-background-abstract-geometric-shapes-luxury-design-wallpaper-realistic-v_1773569jpg!w700wp') no-repeat;
+    background-size: 100% 100%;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+    color: #fff447;
+    text-shadow: #00f3ff;
+}
+
+.left-content .name {
+    font-size: 4rem;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.left-content .disc {
+    font-size: 3rem;
+}
+
+.left-content #element {
+    font-weight: bold;
+    color: #00f3ff;
+}
+
+.right-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+}
+
+.dev-img {
+    width: 80%;
+    border: 8px double white;
+    border-radius: 50px;
+    margin-right: 20%;
+}
+
+/* about page styling */
+
+.about-container {
+    height: 110vh;
+    /* background-color: black; */
+    background: url('https://media.istockphoto.com/id/1216667300/photo/dark-color-office-poster-background-with-empty-wall-sofa-chair-plant-carpet-and-curtain-in.jpg?s=170667a&w=0&k=20&c=CJfZkL1xpCWnPefYuk7hFuxIeIjzWfOS79nlvIF9i8A=') no-repeat;
+    background-size: 100% 100%;
+    /* background-size: cover; */
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* color: greenyellow;
+    text-shadow: 0px 3px 3px black; */
+}
+
+.about-container>h2 {
+    color: cyan;
+    margin: 10px 0px;
+    font-size: 2.1rem;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-underline-position: from-font;
+}
+
+.details {
+    color: darkorange;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: red; */
+    height: 25%;
+}
+
+.details h2 {
+    font-size: 1.7rem;
+    text-decoration: underline dotted;
+}
+
+.details ol li {
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    padding: 7px 0px;
+}
+
+.qualification {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: darkblue; */
+    width: 95%;
+    height: 55vh;
+}
+
+
+.qualification h2 {
+    font-size: 2.1rem;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-underline-position: under;
+    color: turquoise;
+}
+
+.rows-cols {
+    width: 93%;
+    height: 66%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 1.5fr 1.2fr;
+    grid-template-rows: repeat(3, 1fr);
+    box-shadow: 6px 5px 12px 1px rgb(16 16 16);
+    backdrop-filter: blur(7px);
+}
+
+.rows-cols .rows {
+    border: 1.6px solid #646470;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rows-cols .headings {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration-line: underline;
+    text-underline-position: from-font;
+    color: springgreen;
+}
+
+.rows-cols .values {
+    font-size: 1.7rem;
+    font-weight: 600;
+    font-family: cursive;
+    color: greenyellow;
+}
+
+.expertise {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    height: 60vh;
+    margin-bottom: 20px;
+    /* background-color: red; */
+
+}
+
+.expertise h2 {
+    font-size: 2.3rem;
+    text-decoration: underline;
+    text-underline-position: from-font;
+    color: gold;
+}
+
+.expert-grid {
+    /* background-color: cadetblue; */
+    width: 90%;
+    height: 75%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    color: white;
+}
+
+.box-display {
+    border: 2px solid white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: grab;
+    backdrop-filter: blur(6px);
+    box-shadow: 4px 8px 10px 2px #2b2b2b;
+}
+
+.box-display:hover{
+    backdrop-filter: blur(9px);
+    box-shadow: 0 0 10px 4px #2a2a2a;
+}
+
+.box-display:hover ul li {
+    list-style-type: disclosure-closed;
+    font-size: 1.7rem;
+}
+
+.box-display:hover h3 {
+    font-size: 1.9rem;
+}
+
+.box-display h3 {
+    font-size: 1.8rem;
+    text-decoration: underline;
+}
+
+.box-display ul {
+    font-size: 1.5rem;
+}
+
+.box-display ul li {
+    list-style-type: square;
+    padding: 5px;
+}
+
+/* projects page styling */
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 86.6vh;
+    background: url('https://e1.pxfuel.com/desktop-wallpaper/424/7/desktop-wallpaper-html-body-backgrounds-full-screen-html5-background.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    width: 80%;
+    height: 80%;
+    /* border: 1px solid red; */
+}
+
+.items a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 8px 2px #384c9f87;
+    border-radius: 25px;
+    backdrop-filter: blur(1px);
+    transition: .5s;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+.items a:hover {
+    background-color: #80b6c92e;
+    backdrop-filter: blur(3px);
+    box-shadow: 0px 0px 8px 4px #2b409a87;
+}
+
+.items a:hover .text {
+    font-size: 2.2rem;
+}
+
+.img img {
+    width: 18vw;
+}
+
+.text {
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+}
+
+/* contact us page styling */
+
+.contact-container {
+    height: 86.7vh;
+    background: url('https://www.androidauthority.com/wp-content/uploads/2015/11/00-best-backgrounds-and-wallpaper-apps-for-android.jpg') no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wrapper {
+    width: 40%;
+    height: 80%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 40px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.contact-form {
+    /* background-color: red; */
+    width: 80%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-form .inputs {
+    width: 100%;
+    height: 50px;
+    margin: 15px 0;
+    border: none;
+    outline: none;
+    font-size: 1.3rem;
+    background: transparent;
+    border-bottom: 3px solid #ff00c1;
+    color: white;
+    text-align: center;
+}
+
+.inputs:focus {
+    background: #ffffff0f;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.contact-form .inputs::placeholder {
+    color: #c4f1f3;
+    opacity: 0.6;
+}
+
+#btn-submit {
+    margin: 10px 0px;
+    width: 90%;
+    height: 45px;
+    background-color: #162938;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+#btn-submit:hover {
+    background-color: #132431;
+}
+
+.status-code {
+    color: rgb(1 255 42);
+    margin-top: 2px;
+    display: none;
+}
+
+#cross {
+    font-size: 0.88rem;
+    border: 2px solid rgb(1 255 42);
+    cursor: pointer;
+}
+
+/* contact result page styling */
+
+.contact-res-container {
+    height: 86.7vh;
+    background: url('https://www.androidauthority.com/wp-content/uploads/2015/11/00-best-backgrounds-and-wallpaper-apps-for-android.jpg') no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contents {
+    width: 90%;
+    height: 80%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 40px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.data-table {
+    width: 95%;
+    height: 75%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.datas {
+    border-bottom: 3px dotted lime;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+}
+
+.headers {
+    text-decoration: underline;
+}
+
+.result {
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+    padding: 10px;
+    text-align: center;
+}
+
+/* websites page styling */
+
+.website-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 86.6vh;
+    background: url('https://e1.pxfuel.com/desktop-wallpaper/424/7/desktop-wallpaper-html-body-backgrounds-full-screen-html5-background.jpg') no-repeat;
+    background-size: 100% 100%;
+}
+
+.websites {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    width: 80%;
+    height: 80%;
+    /* border: 1px solid red; */
+}
+
+.webs a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 8px 2px #384c9f87;
+    border-radius: 25px;
+    backdrop-filter: blur(1px);
+    transition: .5s;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+
+.webs a:hover {
+    background-color: #80b6c92e;
+    backdrop-filter: blur(3px);
+    box-shadow: 0px 0px 8px 4px #2b409a87;
+}
+
+.webs a:hover .view-text {
+    font-size: 2.2rem;
+}
+
+.views img {
+    width: 36vw;
+    border-radius: 15px;
+}
+
+.view-text {
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
 }

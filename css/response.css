@@ -1,6 +1,6 @@
 /* navbar responsiveness */
 
-@media(max-width: 426px) {
+@media only screen and (max-width: 426px) {
 
     .navbar {
         flex-direction: column;
@@ -43,34 +43,78 @@
 
     .home-container {
         flex-direction: column-reverse;
-        height: 76.7vh !important;
+        height: 76.7vh;
     }
 
     .right-content {
-        width: 100% !important;
-        height: 50% !important;
+        width: 100%;
+        height: 50%;
     }
-    
+
     .dev-img {
-        width: 60% !important;
-        margin: 0 !important;
+        width: 60%;
+        margin: 0;
     }
-    
+
     .left-content {
-        width: 100% !important;
-        height: 44% !important;
+        width: 100%;
+        height: 44%;
     }
 
     .left-content .name {
-        font-size: 2.2rem !important;
+        font-size: 2.2rem;
     }
 
-    .disc #element{
+    .disc #element {
         display: inline-block;
     }
 
     .left-content .disc {
-        font-size: 2.1rem !important;
+        font-size: 2.1rem;
         text-align: center;
+    }
+
+
+    /* projects page responsiveness */
+
+    .projects {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-gap: 15px;
+        overflow: scroll;
+    }
+
+    .items{
+        display: flex;
+        justify-content: center;
+    }
+
+    #last-item{
+        margin-bottom: 15px;
+    }
+
+    .text {
+        font-size: 1rem;
+    }
+
+    .img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img img {
+        width: 80%;
+        padding: 10px 0;
+    }
+
+    .items a {
+        border-radius: 15px;
+        margin: 5px;
+    }
+
+    .items a:hover .text {
+        font-size: 1.1rem;
+        padding: 10px 0;
     }
 }
