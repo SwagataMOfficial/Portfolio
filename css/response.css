@@ -114,7 +114,7 @@
     .expert-grid {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 20px;
-        width: 75%;
+        width: 85%;
         height: 85%;
     }
 
