@@ -11,60 +11,6 @@
     <link rel="shortcut icon"
         href="https://d1b1fjiwh8olf2.cloudfront.net/icon/premium/png-256/3020706.png?token=eyJhbGciOiJoczI1NiIsImtpZCI6ImRlZmF1bHQifQ__.eyJpc3MiOiJkMWIxZmppd2g4b2xmMi5jbG91ZGZyb250Lm5ldCIsImV4cCI6MTY4OTEyMDAwMCwicSI6bnVsbCwiaWF0IjoxNjg4ODc4NjIzfQ__.15021c4f70cc68abd378c04235ba74dfdf2a531d096c25ec980b23cdf3373423"
         type="image/x-icon">
-    <style>
-        .projects-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 86.6vh;
-            background: url('https://e1.pxfuel.com/desktop-wallpaper/424/7/desktop-wallpaper-html-body-backgrounds-full-screen-html5-background.jpg') no-repeat;
-            background-size: 100% 100%;
-        }
-
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 20px;
-            width: 80%;
-            height: 80%;
-            /* border: 1px solid red; */
-        }
-
-        .items a {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            box-shadow: 0px 0px 8px 2px #384c9f87;
-            border-radius: 25px;
-            backdrop-filter: blur(1px);
-            transition: .5s;
-            text-decoration: none;
-            width: 100%;
-            height: 100%;
-        }
-
-        .items a:hover {
-            background-color: #80b6c92e;
-            backdrop-filter: blur(3px);
-            box-shadow: 0px 0px 8px 4px #2b409a87;
-        }
-
-        .items a:hover .text {
-            font-size: 2.2rem;
-        }
-
-        .img img {
-            width: 18vw;
-        }
-
-        .text {
-            font-size: 2rem;
-            color: black;
-            font-weight: bold;
-        }
-    </style>
 </head>
 
 <body>
@@ -121,7 +67,7 @@
                     <span class="text">Web Development</span>
                 </a>
             </div>
-            <div class="items">
+            <div class="items" id="last-item">
                 <a href="#">
                     <span class="img">
                         <img src="https://play-lh.googleusercontent.com/pd_r7IFHbpkqyn-rEmS2CEd4fWio2hjDE_5cuGE5wkGuQXyYgATIKgKGr5SkMqQeRTAo=w600-h300-pc0xffffff-pd"
