@@ -117,4 +117,16 @@
         font-size: 1.1rem;
         padding: 10px 0;
     }
+
+    /* contact page responsiveness */
+
+    .wrapper{
+        width: 85%;
+        height: 90%;
+    }
+
+    #btn-submit{
+        width: 100%;
+    }
+
 }
