@@ -329,15 +329,6 @@ footer h6 {
     box-shadow: 0 0 10px 4px #2a2a2a;
 }
 
-.box-display:hover ul li {
-    list-style-type: disclosure-closed;
-    font-size: 1.7rem;
-}
-
-.box-display:hover h3 {
-    font-size: 1.9rem;
-}
-
 .box-display h3 {
     font-size: 1.8rem;
     text-decoration: underline;
@@ -350,6 +341,15 @@ footer h6 {
 .box-display ul li {
     list-style-type: square;
     padding: 5px;
+}
+
+.box-display:hover h3 {
+    font-size: 1.9rem;
+}
+
+.box-display:hover ul li {
+    list-style-type: disclosure-closed;
+    font-size: 1.7rem;
 }
 
 /* projects page styling */
