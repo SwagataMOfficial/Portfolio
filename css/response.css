@@ -74,6 +74,66 @@
         text-align: center;
     }
 
+    /* about page responsiveness */
+
+    .about-container {
+        height: unset;
+    }
+
+    .details {
+        width: 80vw;
+        margin-top: 5px;
+    }
+
+    .qualification h2 {
+        font-size: 1.8rem;
+    }
+
+    .rows-cols {
+        grid-template-columns: repeat(5, auto);
+        grid-template-rows: repeat(4, auto);
+        overflow: scroll;
+    }
+
+    .rows-cols .headings {
+        font-size: 1.2rem;
+    }
+
+    .rows-cols .values {
+        font-size: 1.18rem;
+    }
+
+    .expertise {
+        height: 88vh;
+    }
+
+    .expertise h2 {
+        font-size: 2rem;
+    }
+
+    .expert-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+        width: 75%;
+        height: 85%;
+    }
+
+    .box-display h3 {
+        font-size: 1.5rem;
+    }
+
+    .box-display ul {
+        font-size: 1.2rem;
+    }
+
+    .box-display:hover h3 {
+        font-size: 1.6rem;
+    }
+
+    .box-display:hover ul li {
+        list-style-type: disclosure-closed;
+        font-size: 1.3rem;
+    }
 
     /* projects page responsiveness */
 
@@ -120,7 +180,7 @@
 
     /* websites page responsiveness */
 
-    .websites{
+    .websites {
         grid-template-columns: repeat(1, 1fr);
         width: 90%;
         height: 90%;
@@ -130,7 +190,7 @@
         width: 80vw;
     }
 
-    .view-text{
+    .view-text {
         font-size: 1.3rem;
     }
 
@@ -166,7 +226,7 @@
         text-align: center;
     }
 
-    .result{
+    .result {
         padding: 2px;
         overflow: scroll;
     }
