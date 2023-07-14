@@ -114,25 +114,29 @@
     .expert-grid {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 20px;
-        width: 85%;
+        width: 90%;
         height: 85%;
     }
 
+    .box-display{
+        border-radius: 15px;
+    }
+
     .box-display h3 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .box-display ul {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .box-display:hover h3 {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     .box-display:hover ul li {
         list-style-type: disclosure-closed;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     /* projects page responsiveness */
