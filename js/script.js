@@ -12,3 +12,12 @@ search.addEventListener('click', ()=>{
 burger.addEventListener('click', () => {
     navElements.classList.toggle('burger-activity');
 });
+
+// adding acive-inactive tab notation.
+const current_page = document.location.pathname;
+const navItems = document.querySelectorAll('.center a');
+navItems.forEach((e)=>{
+    if (e.href.includes(current_page)){
+        e.classList.add('activated');
+    }
+});
