@@ -3,7 +3,19 @@
     padding: 0;
 }
 
-header{
+/* utility classes */
+
+.burger-activity {
+    display: flex !important;
+}
+
+.activated {
+    text-decoration-line: underline !important;
+    text-underline-offset: 5.1px;
+    text-decoration-thickness: 2.6px !important;
+}
+
+header {
     position: sticky;
     top: 0;
     left: 0;
@@ -15,9 +27,6 @@ header{
     background-color: #322f2f;
 }
 
-.burger-activity {
-    display: flex !important;
-}
 
 .burger {
     position: absolute;
@@ -324,7 +333,7 @@ footer h6 {
     box-shadow: 4px 8px 10px 2px #2b2b2b;
 }
 
-.box-display:hover{
+.box-display:hover {
     backdrop-filter: blur(9px);
     box-shadow: 0 0 10px 4px #2a2a2a;
 }
