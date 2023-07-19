@@ -198,6 +198,19 @@ footer h6 {
 
 /* about page styling */
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    /* IE and Edge */
+    -ms-overflow-style: none;
+    /* Firefox */
+    scrollbar-width: none;
+}
+
 .about-container {
     height: 110vh;
     /* background-color: black; */
