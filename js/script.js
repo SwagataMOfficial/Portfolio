@@ -16,25 +16,10 @@ burger.addEventListener('click', () => {
 // adding acive-inactive tab notation.
 const current_page = document.location.pathname;
 const navItems = document.querySelectorAll('.center a');
-// console.log(current_page);
-// console.log(navItems);
-console.log(current_page)
-// if (current_page === '/'){
-//     navItems.forEach(e =>{
-//         e.classList.remove('activated');
-//     });
-// }
-// navItems.forEach((e)=>{
-//     if (e.href.includes(current_page)){
-//         // console.log(e.href);
-//         e.classList.add('activated');
-//     }
-// });
 
-if(current_page != '/'){
+if(current_page != '/Portfolio/'){
     navItems.forEach((e)=>{
         if (e.href.includes(current_page)){
-            // console.log(e.href);
             e.classList.add('activated');
         }
     });
