@@ -10,9 +10,11 @@
 }
 
 .activated {
-    text-decoration-line: underline !important;
-    text-underline-offset: 5.1px;
-    text-decoration-thickness: 2.6px !important;
+    color: yellow !important;
+}
+.activated::after{
+    transform: scaleX(1) !important;
+    background: yellow !important;
 }
 
 header {
