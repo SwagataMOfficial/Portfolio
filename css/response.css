@@ -208,8 +208,17 @@
         height: unset;
     }
 
+    .contact-form h2 {
+        margin-top: 8%;
+    }
+    
     #btn-submit {
         width: 100%;
+        margin-bottom: 8%;
+    }
+
+    .status-code {
+        margin-bottom: 6%;
     }
 
     /* contact result responsiveness */
