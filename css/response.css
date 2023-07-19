@@ -205,7 +205,7 @@
 
     .wrapper {
         width: 85%;
-        height: 70%;
+        height: unset;
     }
 
     #btn-submit {
