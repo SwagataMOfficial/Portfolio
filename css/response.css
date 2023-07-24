@@ -24,9 +24,11 @@
     }
 
     .center {
-        display: none;
         flex-direction: column;
         width: 100%;
+        height: 0vh;
+        overflow: hidden;
+        transition: 0.5s;
     }
 
     .center a {
@@ -45,15 +47,15 @@
         flex-direction: column-reverse;
         height: unset;
     }
-    
+
     .right-content {
         width: 100%;
         height: 32vh;
         margin-top: 3rem;
     }
-    
+
     .dev-img {
-        width: 60%;
+        width: 78%;
         margin: 0;
     }
 
@@ -211,7 +213,7 @@
     .contact-form h2 {
         margin-top: 8%;
     }
-    
+
     #btn-submit {
         width: 100%;
         margin-bottom: 8%;

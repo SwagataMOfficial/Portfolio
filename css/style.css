@@ -6,16 +6,29 @@
 /* utility classes */
 
 .burger-activity {
-    display: flex !important;
+    height: 20vh !important;
 }
 
 .activated {
     color: yellow !important;
 }
-.activated::after{
+
+.activated::after {
     transform: scaleX(1) !important;
     background: yellow !important;
 }
+
+.cross-1{
+    transform: translatey(9px) rotate(225deg);
+}
+.cross-2{
+    transform: scale(0);
+}
+.cross-3{
+    transform: translateY(-10px) rotate(-225deg);
+}
+
+/* main css */
 
 header {
     position: sticky;
@@ -43,6 +56,7 @@ header {
     height: 0.3rem;
     background-color: white;
     border-radius: 5px;
+    transition: 0.5s;
 }
 
 .left {
@@ -52,7 +66,9 @@ header {
 .left .box {
     width: 30px;
     height: 30px;
-    background-color: crimson;
+    /* background-color: crimson; */
+    background: url('../assets/logo.jpg') no-repeat;
+    background-size: cover;
     border-radius: 15px;
     margin: 5px 25px;
 }
@@ -62,6 +78,7 @@ header {
     align-items: center;
     justify-content: center;
     width: 55%;
+    transition: 0.5s;
 }
 
 .center a {
@@ -198,19 +215,6 @@ footer h6 {
 
 /* about page styling */
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-body::-webkit-scrollbar {
-    display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-body {
-    /* IE and Edge */
-    -ms-overflow-style: none;
-    /* Firefox */
-    scrollbar-width: none;
-}
-
 .about-container {
     height: 110vh;
     /* background-color: black; */
@@ -224,6 +228,19 @@ body {
     align-items: center;
     /* color: greenyellow;
     text-shadow: 0px 3px 3px black; */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    /* IE and Edge */
+    -ms-overflow-style: none;
+    /* Firefox */
+    scrollbar-width: none;
 }
 
 .about-container>h2 {
