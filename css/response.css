@@ -5,10 +5,10 @@
     /* utility class media */
 
     .logo-extended {
-        width: 40vw;
-        height: 35vh;
+        width: 175px;
+        height: 217px;
         top: 23vh;
-        left: 30vw;
+        left: 29vw;
         transform: translateX(0px) translateY(-143px) scale(0);
     }
 
@@ -259,4 +259,10 @@
         overflow: scroll;
     }
 
+}
+
+@media only screen and (max-width: 320px) {
+    .logo-extended {
+        left: 22vw;
+    }
 }
