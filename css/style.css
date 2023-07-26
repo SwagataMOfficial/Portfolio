@@ -9,6 +9,10 @@
     height: 20vh !important;
 }
 
+.img-activated {
+    transform: translateX(0px) translateY(0px) scale(1) !important;
+}
+
 .activated {
     color: yellow !important;
 }
@@ -18,13 +22,15 @@
     background: yellow !important;
 }
 
-.cross-1{
+.cross-1 {
     transform: translatey(9px) rotate(225deg);
 }
-.cross-2{
+
+.cross-2 {
     transform: scale(0);
 }
-.cross-3{
+
+.cross-3 {
     transform: translateY(-10px) rotate(-225deg);
 }
 
@@ -70,7 +76,13 @@ header {
     background: url('../assets/logo.jpg') no-repeat;
     background-size: cover;
     border-radius: 15px;
-    margin: 5px 25px;
+    margin: 6px 25px;
+    cursor: pointer;
+    box-shadow: 0 0 7px 1px #1e525b;
+}
+
+.left .box:hover {
+    box-shadow: 0 0 7px 2px #1e525b;
 }
 
 .center {
@@ -137,6 +149,25 @@ header {
 
 .right button:hover {
     background-color: #c8c8c8;
+}
+
+/* logo image extended */
+
+.logo-extended {
+    border: 3px double #00ffda;
+    width: 19vw;
+    height: 50vh;
+    position: absolute;
+    top: 23vh;
+    left: 39vw;
+    transition: 0.5s ease-in-out;
+    /* transform: scale(0); */
+    transform: translateX(-545px) translateY(-120px) scale(0);
+}
+
+.logo-extended .logo__big-image {
+    width: 100%;
+    height: 100%;
 }
 
 /* footer of the page */
