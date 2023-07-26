@@ -161,7 +161,7 @@ header {
     top: 23vh;
     left: 39vw;
     transition: 0.5s ease-in-out;
-    /* transform: scale(0); */
+    transform-origin: top;
     transform: translateX(-545px) translateY(-120px) scale(0);
 }
 
