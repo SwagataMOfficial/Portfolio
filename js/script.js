@@ -1,6 +1,7 @@
 const search = document.getElementById('search-btn');
 const burger = document.querySelector('.burger');
 const navElements = document.querySelector('.center');
+const logo = document.querySelector('.left .box');
 const lines = [
     document.getElementById('line-1'),
     document.getElementById('line-2'),
@@ -38,3 +39,13 @@ if (current_page != '/portfolio/') {
 else {
     navItems[0].classList.add('activated');
 }
+
+// adding logo scaling property.
+logo.addEventListener('click', ()=>{
+    document.querySelector('.logo-extended').classList.add('img-activated');
+});
+
+// adding photo disappearing system.
+document.addEventListener('mouseup', ()=>{
+    document.querySelector('.logo-extended').classList.remove('img-activated');
+});
